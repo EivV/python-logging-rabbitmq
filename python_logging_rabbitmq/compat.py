@@ -9,11 +9,6 @@ else:
     text_type = str
     from queue import Queue as Queue
 
-try:
-    import ujson as json  # noqa: F401
-except ImportError:
-    import json  # noqa: F401
-
 # Support for Django.
 try:
     from django.core.serializers.json import DjangoJSONEncoder as JSONEncoder  # noqa: F401
